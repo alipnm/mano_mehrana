@@ -1,0 +1,56 @@
+@font-face {
+  font-family: vazir;
+  src: url(./assets/Vazir.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: vazir;
+  user-select: none;
+}
+
+:root {
+  --button-color: #add8e6;
+  --label-color: #ffabab;
+  --hover-button-color: #64c4ff;
+}
+
+body {
+  background-color: #efefef;
+}
+
+span {
+  font-size: 26px;
+  width: fit-content;
+  height: fit-content;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--button-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: background-color ease 250ms;
+  margin: 10px;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--hover-button-color);
+}
+form {
+  margin: 5px;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--label-color);
+  padding: 5px;
+  font-size: 17px;
+}

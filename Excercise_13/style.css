@@ -1,0 +1,34 @@
+@font-face {
+  font-family: sahel;
+  src: url(./Sahel.woff);
+}
+@font-face {
+  font-family: sahel-bold;
+  src: url(./Sahel-Bold.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sahel;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: sahel-bold;
+  margin: 10px;
+}
+
+form {
+  background-color: #efefef;
+  border-radius: 10px;
+  width: 1000px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 15px;
+}
+input[value="Login"] {
+  margin: 5px;
+}

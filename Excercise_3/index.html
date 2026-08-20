@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      onsubmit="
+        givePrice();
+        return false;
+      "
+    >
+      <label for="productName">Product Name</label>
+      <input type="text" name="name" id="productName" />
+
+      <label for="productCount">Count Of Products</label>
+      <input type="number" name="count" id="productCount" />
+
+      <label for="productPrice">Price Of each</label>
+      <input type="text" name="price" id="productPrice" />
+
+      <input type="submit" value="Enter" />
+    </form>
+
+    <div id="final"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

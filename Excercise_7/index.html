@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparison</title>
+  </head>
+  <body>
+    <form
+      onsubmit="
+        compare();
+        return false;
+      "
+      autocomplete="off"
+    >
+      <input
+        type="number"
+        name="number1"
+        id="numberNoOne"
+        placeholder="Number One"
+      />
+      <input
+        type="number"
+        name="number2"
+        id="numberNoTwo"
+        placeholder="Number Two"
+      />
+      <input type="submit" value="Compare" />
+    </form>
+
+    <div class="result"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
