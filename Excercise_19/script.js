@@ -3,11 +3,14 @@ const buttonElement = document.getElementsByTagName ('button')[0];
 const rootElement = document.getElementById ('root');
 
 buttonElement.addEventListener ('click', () => {
-  let result = 0;
-  let number = Number (numberElement.value);
-  for (let i = 1; i < Number (numberElement.value); i++) {
-    let factorialResult = number * (number - i);
-    result += factorialResult;
+  const number = Number (numberElement.value);
+  if (number > 0 && Number.isInteger (number)) {
+    let result = 1;
+    for (let i = 1; i <= number; i++) {
+      result *= i;
+    }
+    rootElement.innerHTML = `<h1>${result}</h1>`;
+  } else {
+    rootElement.innerHTML = '<h1>ERROR</h1>';
   }
-  rootElement.innerHTML += `<h1></h1>`
 });
