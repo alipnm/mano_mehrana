@@ -1,0 +1,3 @@
+// bichare shodim sare in :) Amirreza?? baaa...
+let guesses = 7;
+// badbakhti haieman inja tamam shod. -> data structure, term 3 university, time complexity -> kheili tarsnak samtesh narid lotfan -> tarkibi az dm va ap
